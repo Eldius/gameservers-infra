@@ -8,6 +8,6 @@ terraform {
 }
 
 module "minecraft" {
-  source        = "../../modules/minecraft"
+  source        = "../../../modules/minecraft-digitalocean"
   servers_count = 1
 }
