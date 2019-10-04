@@ -1,0 +1,16 @@
+---
+- hosts: all
+  gather_facts: true
+
+  roles:
+    # - role: minecraft-java-edition
+    #   vars:
+    #     minecraft_max_memory: 1g
+    #     minecraft_min_memory: 1g
+    #     minecraft_max_players: 10
+    - role: ../../../minecraft-java-edition-ansible-role
+      vars:
+        minecraft_max_memory: 1g
+        minecraft_min_memory: 1g
+        minecraft_max_players: 10
+        minecraft_enable_query: true
