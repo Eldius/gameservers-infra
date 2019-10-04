@@ -1,6 +1,6 @@
 # A Test Project for my Gamerservers Ansible Roles #
 
-## Price sheet ##
+## Price sheet (used by me to test) ##
 
 | Game      | provider     | region | instance type | memory | price/month | description                                    |
 |-----------|--------------|--------|---------------|--------|-------------|------------------------------------------------|
