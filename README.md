@@ -2,9 +2,9 @@
 
 ## Price sheet ##
 
-| provider     | region | instance type | memory | price/month | description                                    |
-|--------------|--------|---------------|--------|-------------|------------------------------------------------|
-| DigitalOcean | NYC3   | s-1vcpu-2gb   | 2GB    | USD10       | RAM: 2GB/1 vCPU/SSD Size: 50 GB/Transfer: 2 TB |
+| Game      | provider     | region | instance type | memory | price/month | description                                    |
+|-----------|--------------|--------|---------------|--------|-------------|------------------------------------------------|
+| Minecraft | DigitalOcean | NYC3   | s-1vcpu-2gb   | 2GB    | USD10       | RAM: 2GB/1 vCPU/SSD Size: 50 GB/Transfer: 2 TB |
 
 ## Code Snippets ##
 
