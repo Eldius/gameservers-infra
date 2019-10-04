@@ -1,0 +1,6 @@
+ansible/roles/*
+!ansible/roles/requirements.yml
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.retry
