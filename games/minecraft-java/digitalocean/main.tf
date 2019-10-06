@@ -8,6 +8,10 @@ terraform {
 }
 
 module "minecraft" {
-  source        = "../../../modules/minecraft-digitalocean"
+  source        = "../../../modules/digitalocean"
   servers_count = 1
+  playbook = "minecraft-java.yml"
+  instance_size = "size02"
+  instance_name_pattern = "minecraft-test-server"
+  minecraft = "minecraft-java-edition"
 }

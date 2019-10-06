@@ -3,8 +3,8 @@ resource "digitalocean_tag" "gameserver" {
   name = "gameserver"
 }
 
-resource "digitalocean_tag" "minecraft" {
-  name = "minecraft"
+resource "digitalocean_tag" "game_tag" {
+  name = "${var.game_name}"
 }
 
 resource "digitalocean_tag" "disposable" {
@@ -13,8 +13,4 @@ resource "digitalocean_tag" "disposable" {
 
 resource "digitalocean_tag" "test" {
   name = "test"
-}
-
-resource "digitalocean_tag" "java" {
-  name = "java"
 }

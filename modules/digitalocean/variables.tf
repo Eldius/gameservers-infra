@@ -85,7 +85,29 @@ variable "size03" {
   default     = "s-1vcpu-3gb"
 }
 
+
+# Module parameters
 variable "servers_count" {
   description = "How much servers to create"
   default     = 1
+}
+
+variable "playbook" {
+  description = "Playbook to execute"
+  default     = ""
+}
+
+variable "instance_size" {
+  description = "Server Size"
+  default     = ""
+}
+
+variable "instance_name_pattern" {
+  description = "Instance name pattern"
+  default     = ""
+}
+
+variable "game_name" {
+  description = "Game name"
+  default     = ""
 }
