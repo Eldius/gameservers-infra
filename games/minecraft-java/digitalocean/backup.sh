@@ -11,10 +11,10 @@ ssh \
     root@$(terraform output | grep -Eo "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}") <<ENDSSH
 
     mkdir -p ${BACKUPS_FOLDER_REMOTE}
-    TIME_TAG=\$( date "+%Y-%m-%d.%H:%M:%S" )
+    TIME_TAG=\$( date "+%Y-%m-%d_%H-%M-%S" )
     systemctl stop minecraft.service
     cd /servers
-    tar -cvzf ${BACKUPS_FOLDER_REMOTE}/minecraft-\${TIME_TAG}.tar.bz2 minecraft
+    tar -cvzf ${BACKUPS_FOLDER_REMOTE}/minecraft_\${TIME_TAG}.tar.bz2 minecraft
 
 ENDSSH
 
