@@ -1,12 +1,6 @@
 
-variable "servers_count" {
-  description = "Server count"
-  default = 1
-}
-
 variable "region" {}
 
-variable "amount" {}
 variable "name_prefix" {}
 variable "machine_type" {}
 variable "user_data" {}
@@ -32,4 +26,29 @@ variable "disk_destroy_local_exec_command_or_fail" {
 
 variable "disk_destroy_local_exec_command_and_continue" {
   default = ":"
+}
+
+variable "servers_count" {
+  description = "How much servers to create"
+  default     = 1
+}
+
+variable "playbook" {
+  description = "Playbook to execute"
+  default     = ""
+}
+
+variable "instance_size" {
+  description = "Server Size"
+  default     = ""
+}
+
+variable "instance_name_pattern" {
+  description = "Instance name pattern"
+  default     = ""
+}
+
+variable "game_name" {
+  description = "Game name"
+  default     = ""
 }
