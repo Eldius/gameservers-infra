@@ -11,7 +11,7 @@ module "minecraft" {
   source        = "../../../modules/digitalocean"
   servers_count = 1
   playbook = "minecraft-java.yml"
-  instance_size = "size02"
+  instance_size = "s-1vcpu-2gb"
   instance_name_pattern = "minecraft-test-server"
-  minecraft = "minecraft-java-edition"
+  game_name = "minecraft-java-edition"
 }

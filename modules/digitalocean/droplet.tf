@@ -2,7 +2,7 @@ resource "digitalocean_droplet" "minecraft_test_server" {
   ssh_keys           = ["3d:90:f5:28:0e:22:c8:6d:4b:e7:3a:ee:65:3f:a3:d2", "8c:1b:19:ba:26:d3:e8:65:fb:17:12:eb:22:0b:eb:5e"]
   image              = var.ubuntu
   region             = var.do_nyc3
-  size               = var.MAP["${var.instance_size}"]
+  size               = var.instance_size
   private_networking = false
   backups            = false
   ipv6               = true
