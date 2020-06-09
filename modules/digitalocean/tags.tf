@@ -4,7 +4,7 @@ resource "digitalocean_tag" "gameserver" {
 }
 
 resource "digitalocean_tag" "game_tag" {
-  name = "${var.game_name}"
+  name = var.game_name
 }
 
 resource "digitalocean_tag" "disposable" {

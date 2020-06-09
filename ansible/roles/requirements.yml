@@ -2,4 +2,9 @@
 - src: https://github.com/Eldius/minecraft-java-edition-ansible-role.git
   name: minecraft-java-edition
   scm: git
-  version: v0.0.1
+  version: master
+
+- src: https://github.com/Eldius/conan-exiles-ansible-role.git
+  name: conan-exiles
+  scm: git
+  version: master

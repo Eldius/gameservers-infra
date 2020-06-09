@@ -1,4 +1,4 @@
 
-output "minecraft_server_ip" {
-  value = "${digitalocean_droplet.minecraft_test_server.*.ipv4_address}"
+output "server_ips" {
+  value = "${digitalocean_droplet.game_server.*.ipv4_address}"
 }
