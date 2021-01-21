@@ -3,4 +3,5 @@
   gather_facts: true
 
   roles:
-    - role: conan-exiles
+    - role: /home/eldius/dev/workspaces/ansible-roles/conan-exiles-ansible-role
+    #- role: conan-exiles

@@ -1,6 +1,6 @@
 resource "digitalocean_droplet" "game_server" {
-  ssh_keys           = ["3d:90:f5:28:0e:22:c8:6d:4b:e7:3a:ee:65:3f:a3:d2", "8c:1b:19:ba:26:d3:e8:65:fb:17:12:eb:22:0b:eb:5e"]
-  image              = var.ubuntu
+  ssh_keys           = ["59:cf:b2:4e:eb:b7:93:94:f9:5a:76:2f:44:dd:17:d7"]
+  image              = var.ubuntu2004
   region             = var.do_nyc3
   size               = var.instance_size
   private_networking = false
@@ -15,9 +15,9 @@ resource "digitalocean_droplet" "game_server" {
   }
 
   tags = [
-    "${digitalocean_tag.gameserver.id}"
-    , "${digitalocean_tag.test.id}"
-    , "${digitalocean_tag.disposable.id}"
-    , "${digitalocean_tag.game_tag.id}"
+    digitalocean_tag.gameserver.id
+    , digitalocean_tag.test.id
+    , digitalocean_tag.disposable.id
+    , digitalocean_tag.game_tag.id
   ]
 }

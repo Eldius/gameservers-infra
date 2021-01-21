@@ -53,10 +53,16 @@ variable "do_tor1" {
   default     = "tor1"
 }
 
-# Default Os
-variable "ubuntu" {
+# Ubuntu 18.04
+variable "ubuntu1804" {
   description = "Default LTS"
   default     = "ubuntu-18-04-x64"
+}
+
+# Ubuntu 20.04
+variable "ubuntu2004" {
+  description = "Default LTS"
+  default     = "ubuntu-20-04-x64"
 }
 
 variable "centos" {
